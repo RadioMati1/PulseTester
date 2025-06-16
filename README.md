@@ -1,11 +1,12 @@
-## FIles:
+# FIles:
+## OUTPUT PULSE IS SET FOR 50ms DEFAULTLY
 ### multi_inputs.py:
-**IMPORTANT NOTE: this file takes 5 params when calling it**\   
+**IMPORTANT NOTE: this file takes 5 params when calling it** 
 	- func multi_inputs_test(output, input1, input2, input3, csv_serial_number):\
-		- func rising(pigpio_obj, level, tick):
-			- calculates input delay time, and appends it to result list.
-		- func falling(gpio_obj, level, tick):
-			- calculates duration of input pulse and append it to esult list
+		* func rising(pigpio_obj, level, tick):
+			 calculates input delay time, and appends it to result list.
+		* func falling(gpio_obj, level, tick):
+			 calculates duration of input pulse and append it to esult list
 	
 
 ### parser:
@@ -15,19 +16,17 @@
 
 
 ### visual_monitor:
-**IMPORTANT NOTE: this file takes 5 params when calling it**\  
+**IMPORTANT NOTE: this file takes 5 params when calling it**
 	- func render_waveform(list:input_waves, total_ms=50, width=50) #each ms considered a char
 		this method forms the visual bars
 	- func save_to_csv(int:serial_num, str:tracker_line):
 		this methid creates and modifies csv file that instor test identified by given serial number by the user
 	- class PulseApp(App):
-		- func compose(self):
+		* func compose(self):
 			visualize text  
-		- func on_button_pressed(self, event:Button.Pressed):
+		* func on_button_pressed(self, event:Button.Pressed):
 			visualize the bars on press 
 
-
-## OUTPUT IS SET FOR 50MS DEFAULTLY
 
 ## Requirments
 - pigpiod daemon to manage the GPIO
