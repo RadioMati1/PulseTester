@@ -1,7 +1,6 @@
-# FIles:
+# Files:
 ## OUTPUT PULSE IS SET FOR 50ms DEFAULTLY
-### multi_inputs.py:
-####IMPORTANT NOTE: this file takes 5 params when calling it  
+### multi_inputs.py: 
 	- func multi_inputs_test(output, input1, input2, input3, csv_serial_number):
     		- func rising(pigpio_obj, level, tick): 
             		calculates input delay time, and appends it to result list. 
@@ -15,8 +14,7 @@
 			
 
 
-### visual_monitor:
-####IMPORTANT NOTE: this file takes 5 params when calling it 
+### visual_monitor.py: 
 	- func render_waveform(list:input_waves, total_ms=50, width=50) #each ms considered a char 
 		this method forms the visual bars
 	- func save_to_csv(int:serial_num, str:tracker_line): 
