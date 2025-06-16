@@ -1,5 +1,5 @@
 # Files:
-## OUTPUT PULSE IS SET FOR 50ms DEFAULTLY
+## NOTE: output pulse set to 50ms defaultly
 ### multi_inputs.py: 
 	- func multi_inputs_test(output, input1, input2, input3, csv_serial_number):
     		- func rising(pigpio_obj, level, tick): 
